@@ -1,9 +1,10 @@
 # Letöltés
 ## Internet Download Manager
 ### IDM letöltése:
--https://www.internetdownloadmanager.com/
--Először is töltsük le a programot, majd telepítsük fel.
--A program felajánlja, hogy a bővítményt adjuk hozzá a böngészőhöz, ezt feltétlenül fogadjuk el.
+https://www.internetdownloadmanager.com/
+
+Először is töltsük le a programot, majd telepítsük fel.
+A program felajánlja, hogy a bővítményt adjuk hozzá a böngészőhöz, ezt feltétlenül fogadjuk el.
 ### **Böngésző beállítások:**
 -A böngészőnkben nyissuk meg a bővítményeket (Chrome esetében másoljuk be az alábbi linket ```chrome://extensions/``` ) pipáljuk be az IDM-et, ha nem lenne, majd kattintsunk a ```Részletek``` fülre.
 - Az összes webhelyen engedélyezzük a hozzáférést és az alsó három csúszkát is csúsztassuk zöldre. 
@@ -11,6 +12,7 @@
 ### **IDM beállítások:**
 ![Kép2](https://i.imgur.com/RQ6NcQi.png)
 ![Kép3](https://i.imgur.com/eyZn5ib.png)
+
 -A többi beállításhoz ne nyúljunk, esetleg a ```Letöltés helye``` menüpontban álligassunk, ha az alapértelmezett nem lenne jó.
 ### **Maga a letöltés:**
 - Nyissunk meg a letöltendő filmet, (az én esetemben: https://waaw.to/f/mQ5qhI7zUrqe#.YKzMaqH_OyM.link) indítsuk el a videót, majd kattintsunk a `Videó letöltése` gombra, ami jelen esetben a jobb felső sarokban volt. Itt láthatjuk, hogy a videót TS formátumként fogjuk lementeni, de ne ijedjünk meg, ezt könnyedén mp4-é alakíthatjuk egy nagyon hasznos és ingyenes programmal, amivel a régebbi DVD lejátszókhoz megfelelő videókat is konvertálhatuk.
@@ -21,26 +23,36 @@
 ## FFMPEG
 ### FFMPEG letöltése:
 -Menjünk fel az FFMPEG honlapjára és kattintsunk a letöltésre. (https://www.ffmpeg.org/download.html)
--Görgessünk lejjebb és kattintsunk a `Windows builds from gyan.dev`
+-Görgessünk lejjebb és kattintsunk a `Windows builds from gyan.dev` gombra.
+
 ![Kép5](https://i.imgur.com/SmcFPu3.png)
+
 -Görgessünk le a `release`-ig majd nyissunk meg a képen látható linket.
+
 ![Kép6](https://i.imgur.com/WFqvhLO.png)
+
 -Emlékeim szerint fel fog jönni egy piros figyelmeztető ablak, de tartsuk meg a fájlt, nem tartalmaz vírust.
 -Amennyiben nincs semmilyen speciális kicsomagolónk mint pl. a WinRar, akkor nyugodtan letölthetjük a 3. sima ZIP-et, amit az alapértelmezett windowsos kicsomagolóval is ki lehet bontani.
 -Csomagoljuk ki a fájlt, menjünk bele a mappába és azon belül is a `bin` mappába.
 -Készítsünk egy `FFMPEG` nevű mappát a C:\ meghajtóra majd másoljuk bele a 3 exe fájlt amit a `bin`-ben találtunk. Ezután le is törölhetjük az eredeti mappát, hogy ne foglalja a helyet.
 -Most hozzá kell adnunk a `path`-hoz az FFMPEG mappát. Ehhez jobb klikk a Windows gombra bal alul, és ott kattintsunk a `Rendszer`fülre.
 -Jobb oldalt kattintsunk a `Speciális rendszerbeállítások` gombra.
+
 ![Kép7](https://i.imgur.com/ZjihPX8.png)
+
 -A felugró ablakban gattintsunk a `Környezeti változók...` gombra.
 -Kattintsunk a `Path`-ra, majd a `Szerkesztés`gombra. FONTOS: A Rednszerváltozói Pathba kattintsunk!
 -Itt kattintsunk a `Tallózás` gombra, majd tallózuk be az FFMPEG mappát a C-n.
+
 ![Kép8](https://i.imgur.com/fC6oBK5.png)
+
 -Ezután csak nyomkodjuk az `OK`gombot, míg be nem zárja az összes ablakot.
 -Mindeközben letöltődött a filmünk, konvártáljuk is át, hogy nézhető legyen a DVD lejátszón!
 -Az Intézőben menjünk bele abba a mappába, ahová a filmet letöltöttük.
 -Kattintsunk bele a mappa elérhetőségének útjába, majd gépeljük be, hogy `cmd`.
+
 ![Kép9](https://i.imgur.com/WvLGEkQ.png)
+
 -Nyomjunk entert.
 -Egy fekete ablak fogad, ez a Command Prompt.
 -Másoljuk ki az alábbi parancsot úgy, hogy a -i után az a fájlnév szerepeljen, ami a videónk neve. Ügyeljünk arra, hogy a kiterjesztés is egyezzen. 
