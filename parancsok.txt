@@ -1,0 +1,20 @@
+Letöltés:		ffmpeg -i "http://host/folder/file.m3u8" -bsf:a aac_adtstoasc -vcodec copy -c copy -crf 0 file.mp4
+
+
+DVD lejátszó:		ffmpeg -i file.mp4 -target pal-dvd -ps 2000000000 -aspect 16:9 output.mpeg
+
+
+Másik talán jó		ffmpeg -i file.mp4 -aspect 16:9 -c:v mpeg4 -c:a mp3 -qmin 1 -qmax 3 -b:a 256k -b:v 4000k -y output.avi
+
+
+Fekete - fehér: 	ffmpeg -i file.png -vf format=gray output.png
+
+
+Felirat égetés:		-vf subtitles=magyar.srt
+
+
+Audió csere:		ffmpeg -i file.mp4 -i audio.wav -c:v copy -map 0:v:0 -map 1:a:0 -shortest new.mp4
+							//shortest, ha az audió hoszabb mint a videó
+							
+							
+Audió kiszedés videóból: ffmpeg -i input-video.avi -vn -acodec copy output-audio.aac		
